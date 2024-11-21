@@ -1,0 +1,46 @@
+#text3{
+  position: absolute;      
+  top: 150px;
+	font-size: 16px;
+	width: 100%;
+	border: none;
+	outline: none;
+	padding-bottom: 8px;
+	box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+}
+
+.text_underline{
+  position: absolute;      
+  top:170px;
+	position: relative; /*.text_underline::beforeの親要素*/
+	border-top: 1px solid #c2c2c2; /*text3の下線*/
+}
+
+/*共通のstyle*/
+.text_underline::before,
+.text_underline::after{
+	position: absolute; 
+	bottom: 0px; /*中央配置*/
+	width: 0px; /*アニメーションで0pxから50%に*/
+	height: 3px; /*高さ*/
+	content: '';
+	background-color: #6495ed; /*アニメーションの色*/
+	transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+/*中央から右へのアニメーション*/
+.text_underline::before{
+	left: 50%; /*中央配置*/
+}
+
+/*中央から左へのアニメーション*/
+.text_underline::after{ 
+	right: 50%; /*中央配置*/
+}
+
+#text3:focus + .text_underline::before,
+#text3:focus + .text_underline::after{
+	width: 50%;
+}
+
