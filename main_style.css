@@ -1,6 +1,6 @@
 #text3{
   position: absolute;      
-  top: 150px;
+  top:400px;
 	font-size: 16px;
 	width: 100%;
 	border: none;
@@ -11,7 +11,7 @@
 
 .text_underline{
   position: absolute;      
-  top:170px;
+  top:420px;
 	position: relative; /*.text_underline::beforeの親要素*/
 	border-top: 1px solid #c2c2c2; /*text3の下線*/
 }
