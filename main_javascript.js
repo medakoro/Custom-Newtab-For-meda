@@ -43,7 +43,8 @@ searchInput.addEventListener('keypress', function(event) {
                         window.location.href = `https://www.google.com/search?q=${value}`;
                         break;
                     case "Yahoo":
-                        window.location.herf = `https://search.yahoo.co.jp/search?p=${value}`;
+                        console.log(`Yahoo Enter! Input : ${value}`)
+                        window.location.href = `https://search.yahoo.co.jp/search?p=${value}`;
                         break;
                     default:
                         // デフォルトの処理
