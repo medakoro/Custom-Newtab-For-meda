@@ -1,4 +1,4 @@
-# Meda_s_Custom_NewTab_Page
+# Custom-Newtab-For-meda
 I made this page for me
 
 This page :
